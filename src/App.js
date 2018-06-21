@@ -6,8 +6,11 @@ class App extends Component {
         super(props, context);
         this.state = {
             counter: 0
-        }
+        }    
     }
+    componentDidMount() {
+        window.setTimeout(() => this.setState({ counter: 100 }), 2000);
+    }    
     render() {
         const { counter } = this.state;
         return (
