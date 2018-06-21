@@ -1,7 +1,7 @@
-const generateName = require('sillyname');
-require('./index.css'); // ADDED FOR CSS
-const hello = require('./hello');
-const icon = require('./icon.png');
+import generateName from 'sillyname';
+import './index.css'; // ADDED FOR CSS
+import hello from './hello';
+import icon from './icon.png';
 
 const name = generateName();
 const counterEl = document.getElementById('counter');
