@@ -8,9 +8,8 @@ const counterEl = document.getElementById('counter');
 const incrementEl = document.getElementById('increment');
 const iconEl = document.getElementById('icon');
 
-incrementEl.addEventListener('click', function() {
-    counterEl.innerHTML = (parseInt(counterEl.innerHTML, 10) + 1).toString();
-});
+const clickHandler = counterEl.innerHTML = (parseInt(counterEl.innerHTML, 10) + 1).toString();
+incrementEl.addEventListener('click', clickHandler);
 
 hello();
 window.console.log(name);
