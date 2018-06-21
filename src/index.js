@@ -16,4 +16,4 @@ window.console.log(name);
 
 iconEl.src = icon;
 window.console.log(a);
-window.console.log(b);
+window.console.log(b); //part 3 finished
