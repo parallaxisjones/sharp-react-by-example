@@ -1,19 +1,27 @@
-import generateName from 'sillyname';
-import './index.css'; // ADDED FOR CSS
-import hello, { a, b } from './hello';
-import icon from './icon.png';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+// import registerServiceWorker from './registerServiceWorker';
+import './index.css';
+ReactDOM.render(<App />, document.getElementById('root'));
+// registerServiceWorker();
 
-const name = generateName();
-const counterEl = document.getElementById('counter');
-const incrementEl = document.getElementById('increment');
-const iconEl = document.getElementById('icon');
+// import generateName from 'sillyname';
+// import './index.css'; // ADDED FOR CSS
+// import hello, { a, b } from './hello';
+// import icon from './icon.png';
 
-const clickHandler = () => counterEl.innerHTML = (parseInt(counterEl.innerHTML, 10) + 1).toString();
-incrementEl.addEventListener('click', clickHandler);
+// const name = generateName();
+// const counterEl = document.getElementById('counter');
+// const incrementEl = document.getElementById('increment');
+// const iconEl = document.getElementById('icon');
 
-hello();
-window.console.log(name);
+// const clickHandler = () => counterEl.innerHTML = (parseInt(counterEl.innerHTML, 10) + 1).toString();
+// incrementEl.addEventListener('click', clickHandler);
 
-iconEl.src = icon;
-window.console.log(a);
-window.console.log(b); //part 3 finished
+// hello();
+// window.console.log(name);
+
+// iconEl.src = icon;
+// window.console.log(a);
+// window.console.log(b); //part 3 finished
